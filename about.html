@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"/>
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="https://kit.fontawesome.com/a07bde15df.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<title>About</title>
+	</head>
+	<body>
+		<section class="sub-header">
+			<nav>
+				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
+					<div class="nav-links" id="navLinks">
+						<i class="fas fa-times" onclick="hideMenu()"></i>
+						<ul>
+							<li><a class="nav-link" href="index.html">Home</a></li>
+							<li><a class="nav-link" href="about.html">Over ons</a></li>
+							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
+							<li><a class="nav-link" href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+					<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<h1>Over ons</h1>
+		</section>
+		
+		<section class="content">
+			<div class="row">
+				<div class="content-col" style="margin-top: 30px">
+					<h1>Tuinideeën Serge Vercaemst</h1>
+					<p>In 1988 startten wij de eenmanszaak ‘Tuinideeën Serge Vercaemst’. In 2010 werd de eenmans-zaak omgevormd tot ‘bvba Vercaemst Tuinen’. Wij kunnen intussen bogen op een rijke dertigjarige ervaring, die wij volledig ten dienste stellen van onze klanten.</p>
+					<p>Uw tuin zorgt voor een extra dimensie van uw woning en laat u toe u na uw drukke dagelijkse taak onbekommerd te genieten van een welverdiende ontspanning, de beste remedie tegen stress en burn-out. Haal er dus het maximum uit.</p>
+				</div>
+				<div class="content-col">
+					<img src="img/gallery/1057.jpg">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="content-col">
+					<img src="img/gallery/1058.jpg">
+				</div>
+				<div class="content-col" style="margin-top: -50px">
+					<p>Wij ontwerpen uw eigentijdse tuin, aangepast aan de omgeving van uw woning en in over- eenstemming met uw verlangens, uw budget maar vooral uw noden. Wij volgen de nieuwste tuintrends op de voet. Of u nu kiest voor een sobere onderhoudsvriendelijke tuin of een tuin voor de gedreven plantenliefhebber, al dan niet met weelderige plantenborders of rustige waterpartijen ... er is voor elk wat wils. Wij denken met u mee!</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="content-col" style="margin-top: 30px">
+					<p>Alle seizoenen kennen hun eigen charme. Kies voor romantiek, mystiek, soberheid, stilte, warmte, weelderigheid ... en pas het toe in een klein stadstuintje of in een grote landschapstuin.</p>
+				</div>
+				<div class="content-col">
+					<img src="img/gallery/1059.jpg">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="content-col">
+					<img src="img/gallery/1060.jpg">
+				</div>
+				<div class="content-col" style="margin-top: -50px">
+					<p>Geniet nog meer van uw ecologische tuin met allerlei geurige kruiden en laat de siergrassen maar spelen met een licht briesje. Vergeet ook niet de meerstammige heesters en bomen of de organisch gesnoeide hagen. Een aangepaste sfeerverlichting op maat en een mooi ogend terras vervolledigen het geheel en maken dat uw huis nog meer een thuis wordt.</p>
+					<br>
+					<p>Omdat foto’s duizendmaal meer vertellen dan woorden, kan u hier enkele realisaties bekijken. U vindt er vast heel wat inspiratie.</p>
+					<p>Bekijk ons aanbod en contacteer ons gerust vrijblijvend via de contactpagina.</p>
+					<a href="realisaties.html" class="hero-btn green-btn" style="margin-bottom: 10px;">Bekijk ons werk!</a>
+					<a href="index.html#contact" class="hero-btn green-btn">Contacteer ons!</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<nav>
+				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
+				<div class="copyright">Copyright 2021. All rights reserved.</div>
+					<div class="nav-links" id="navLinks">
+						<ul>
+							<li><a class="nav-link" href="index.html">Home</a></li>
+							<li><a class="nav-link" href="about.html">Over ons</a></li>
+							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
+							<li><a class="nav-link" href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+			</nav>
+		</section>
+		
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+	</body>
+</html>

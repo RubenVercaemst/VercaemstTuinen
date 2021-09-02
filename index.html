@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"/>
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="https://kit.fontawesome.com/a07bde15df.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<title>Vercaemst Tuinen BVBA</title>
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
+					<div class="nav-links" id="navLinks">
+						<i class="fas fa-times" onclick="hideMenu()"></i>
+						<ul>
+							<li><a class="nav-link" href="index.html">Home</a></li>
+							<li><a class="nav-link" href="about.html">Over ons</a></li>
+							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
+							<li><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<div class="text-box">
+				<img src="img/logo.svg"/>
+				<h1>VERCAEMST TUINEN</h1>
+			</div>
+
+			<div class="arrow-down">
+				<a class="nav-link" href="#content"><i class="fas fa-chevron-down fa-3x"></i></a>
+				
+			</div>
+		</section>
+		
+		<section class="content" id="content">
+			<div class="row">
+				<div class="content-col" style="margin-top: 30px">
+					<h1>Wie zijn we</h1>
+					<p>In 1988 startten wij de eenmanszaak ‘Tuinideeën Serge Vercaemst’. In 2010 werd de eenmans-zaak omgevormd tot ‘bvba Vercaemst Tuinen’. Wij kunnen intussen bogen op een rijke dertigjarige ervaring, die wij volledig ten dienste stellen van onze klanten.</p>
+						<a href="about.html" class="hero-btn green-btn">Lees meer!</a>
+				</div>
+				<div class="content-col">
+					<img src="img/gallery/1053.jpg">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="content-col">
+					<img src="img/gallery/1052.jpg">
+				</div>
+				<div class="content-col" style="margin-top: -50px">
+					<h1>Wat doen we</h1>
+						<ul>
+							<li>Alle tuinaanleg en onderhoud, van ontwerp tot uitvoering</li>
+							<li>Opritten en terrassen in platines, (klei)klinkers, natuursteen, arduin of hout</li>
+							<li>Vijvers en zwemvijvers met natuurlijke filtering</li>
+							<li>Tuinverlichting en beregeningsinstallaties</li>
+							<li>Houten afsluitingen, afsluitingen met draad en ericamatten</li>
+							<li>Houten poorten</li>
+							<li>Tuinhuizen, carports, houten constructies</li>
+							<li>Snoeiwerken, seizoens- en doorlopend onderhoud</li>
+							<li>Beplantingswerken: van vaste planten tot grote meerstammige bomen</li>
+							<li>Deskundige gazonaaleg door inzaai of met graszoden of kunstgras</li>
+						</ul>
+						<a href="realisaties.html" class="hero-btn green-btn">Bekijk ons werk!</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="contact-container">
+			<div class="row">
+				<div class="contact-col" style="margin: auto; text-align: center;">
+					<h1>Contacteer ons</h1>
+					<div>
+						<i class=""></i>
+						<span>
+							<h5>VERCAEMST TUINEN bv</h5>
+							<p>Deerlijkseweg 36</br>8790 Waregem</p>
+							<p>E-mail: serge.vercaemst@telenet.be</p></br>
+							<p>Tel.: 056/60.70.26</p>
+							<p>Gsm: 0475/46.00.49</p>
+							<p>Fax: 056/61.11.34</p>
+							<p>BTW: BE 0822 284 935</p></br>
+							<p>Vraag ons vrijblijvend een offerte via mail.</p></br>
+							<a href="realisaties.html" class="hero-btn white-btn">Mail ons!</a>
+						</span>
+					</div>
+				</div>
+			</div>	
+			</div>
+		</section>
+
+		<section class="footer">
+			<nav>
+				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
+				<div class="copyright">Copyright 2021. All rights reserved.</div>
+					<div class="nav-links" id="navLinks">
+						<ul>
+							<li><a class="nav-link" href="index.html">Home</a></li>
+							<li><a class="nav-link" href="about.html">Over ons</a></li>
+							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
+							<li><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+			</nav>
+		</section>
+
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+	</body>
+</html>
