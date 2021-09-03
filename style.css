@@ -116,8 +116,10 @@ nav img{
 }
 
 .white-btn:hover{
-	border: 1px solid white;
-	background: #121921;
+	/* border: 1px solid #121921; */
+		border: 1px solid white;
+
+	background: white;
 	transition: 1s;
 }
 
@@ -209,7 +211,7 @@ nav .fas{
 }
 
 .white-btn:hover{
-	color: #fff;
+	color: #121921;
 }
 
 h1{
