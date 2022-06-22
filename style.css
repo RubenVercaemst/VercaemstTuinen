@@ -220,8 +220,8 @@ h1{
 	color: var(--main-font-color);;
 }
 
-/* @media all and (max-width: 900px){ */
-@media all and (max-width: 56.25em){
+@media all and (max-width: 900px){
+/* @media all and (max-width: 56.25em){ */
 	.row{
 		flex-direction: column;
 	}
