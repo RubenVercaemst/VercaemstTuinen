@@ -2,43 +2,49 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"/>
-		<link rel="stylesheet" href="./style.css" />
 
-		<script src="https://kit.fontawesome.com/a07bde15df.js" crossorigin="anonymous"></script>
-		<script src="scripts.js"></script>
-
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		
 		<title>Realisaties</title>
 	</head>
 	<body>
-		<section class="sub-header">
-			<nav id="navbar">
-				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
-					<div class="nav-links" id="navLinks">
-						<i class="fas fa-times" onclick="hideMenu()"></i>
-						<ul>
-							<li><a class="nav-link" href="index.html">Home</a></li>
-							<li><a class="nav-link" href="about.html">Over ons</a></li>
-							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
-							<li><a class="nav-link" href="index.html#contact">Contact</a></li>
-						</ul>
-					</div>
-					<i class="fas fa-bars" onclick="showMenu()"></i>
-			</nav>
-			<h1>Ons werk</h1>
-		</section>
 		
-		<section class="content">
-			<div class="row">
-				<div class="content-col">
+		<nav class="navbar navbar-expand-lg bg-light fixed-top">
+			<div class="container">
+			<a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" width="30" height="24"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">VERCAEMST TUINEN</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				  </div>
+				  <div class="offcanvas-body justify-content-end">
+					  <div class="navbar-nav">
+						  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+						  <a class="nav-link" href="about.html">Over ons</a>
+						  <a class="nav-link active" href="realisaties.html">Ons werk</a>
+						  <a class="nav-link" href="#contact">Contact</a>
+					  </div>
+				  </div>
+			</div>
+		</div>
+		</nav>
+
+		<header class="sub-header">
+			<div class="container">
+				<h1>Ons werk</h1>
+			</div>
+		</header>
+
+		<section class="content-section" id="what">
+			<div class="container">
+			<div class="row pt-4 d-flex align-items-center">
+				<div class="col-lg-7 pb-2 pb-lg-0">
 					<h1>Wat doen we</h1>
 						<ul>
 							<li>Alle tuinaanleg en onderhoud, van ontwerp tot uitvoering</li>
@@ -52,266 +58,146 @@
 							<li>Beplantingswerken: van vaste planten tot grote meerstammige bomen</li>
 							<li>Deskundige gazonaaleg door inzaai of met graszoden of kunstgras</li>
 						</ul>
-						<a href="#realisaties" class="hero-btn green-btn" style="margin-bottom: 10px;">Bekijk ons werk!</a>
-						<a href="index.html#contact" class="hero-btn green-btn">Contacteer ons!</a>
+						<a href="realisaties.html" class="btn btn-primary">Bekijk ons werk!</a>
+						<a href="index.html#contact" class="btn btn-primary">Contacteer ons!</a>
 				</div>
-				<div class="content-col">
-					<img src="img/gallery/1061.jpg">
+				<div class="col-lg-5 pt-2 pt-lg-0">
+					<img src="img/gallery/1061.jpg" class="img-fluid" alt="...">
 				</div>
+			</div>
 			</div>
 		</section>
 
-		<section class="content" id="realisaties">
-			<h1 class="h1realisaties" style="margin: 20px 0px; text-align: center;">Realisaties</h1>
-				<div class="photos">
-						<img src="img/gallery/1049.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-						<img src="img/gallery/1050.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-						<img src="img/gallery/1051.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-						<img src="img/gallery/1052.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-						<img src="img/gallery/1053.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-						<img src="img/gallery/1054.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-						<img src="img/gallery/1055.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-						<img src="img/gallery/1056.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-						<img src="img/gallery/1057.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-						<img src="img/gallery/1058.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-						<img src="img/gallery/1059.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-						<img src="img/gallery/1060.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-						<img src="img/gallery/1061.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-						<img src="img/gallery/1062.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-						<img src="img/gallery/1095.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
-						<img src="img/gallery/1096.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
-						<img src="img/gallery/1097.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
-						<img src="img/gallery/1098.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
-						<img src="img/gallery/1099.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
-						<img src="img/gallery/1100.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
-						<img src="img/gallery/1101.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
-						<img src="img/gallery/1102.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
-						<img src="img/gallery/1103.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
-						<img src="img/gallery/1104.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
-						<img src="img/gallery/1105.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
-						<img src="img/gallery/1206.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+		<!-- TODO: Width & Height carousel-->
+		<section class="content-section" id="gallery">
+			<div class="container">
+			<div class="row pt-4 d-flex align-items-center">
+				<h1>Realisaties</h1>
+			</div>
+			<div class="row pt-4 d-flex align-items-center">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" aria-label="Slide 16"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" aria-label="Slide 17"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" aria-label="Slide 18"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" aria-label="Slide 19"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19" aria-label="Slide 20"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" aria-label="Slide 21"></button>
 					</div>
-
-				  <div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content">
-				  
-					  <div class="mySlides">
-						<div class="numbertext">1 / 26</div>
-						<img src="img/gallery/1049.jpg" style="height:100%">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="img/gallery/1049.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">2 / 26</div>
-						<img src="img/gallery/1050.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1050.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">3 / 26</div>
-						<img src="img/gallery/1051.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1051.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">4 / 26</div>
-						<img src="img/gallery/1052.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1057.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">5 / 26</div>
-						<img src="img/gallery/1053.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1058.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">6 / 26</div>
-						<img src="img/gallery/1054.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1059.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">7 / 26</div>
-						<img src="img/gallery/1055.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1060.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">8 / 26</div>
-						<img src="img/gallery/1056.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1061.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">9 / 26</div>
-						<img src="img/gallery/1057.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1062.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">10 / 26</div>
-						<img src="img/gallery/1058.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1095.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">11 / 26</div>
-						<img src="img/gallery/1059.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1096.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">12 / 26</div>
-						<img src="img/gallery/1060.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1097.jpg" class="d-block w-100" alt="...">
 					  </div>
-
-					  <div class="mySlides">
-						<div class="numbertext">13 / 26</div>
-						<img src="img/gallery/1061.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1098.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">14 / 26</div>
-						<img src="img/gallery/1062.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1099.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">15 / 26</div>
-						<img src="img/gallery/1095.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1100.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">16 / 26</div>
-						<img src="img/gallery/1096.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1101.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">17 / 26</div>
-						<img src="img/gallery/1097.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1102.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">18 / 26</div>
-						<img src="img/gallery/1098.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1103.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">19 / 26</div>
-						<img src="img/gallery/1099.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1104.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">20 / 26</div>
-						<img src="img/gallery/1100.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1105.jpg" class="d-block w-100" alt="...">
 					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">21 / 26</div>
-						<img src="img/gallery/1101.jpg" style="height:100%">
+					  <div class="carousel-item">
+						<img src="img/gallery/1206.jpg" class="d-block w-100" alt="...">
 					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">22 / 26</div>
-						<img src="img/gallery/1102.jpg" style="height:100%">
-					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">23 / 26</div>
-						<img src="img/gallery/1103.jpg" style="height:100%">
-					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">24 / 26</div>
-						<img src="img/gallery/1104.jpg" style="height:100%">
-					  </div>
-					  
-					  <div class="mySlides">
-						<div class="numbertext">25 / 26</div>
-						<img src="img/gallery/1105.jpg" style="height:100%">
-					  </div>
-				  
-					  <div class="mySlides">
-						<div class="numbertext">26 / 26</div>
-						<img src="img/gallery/1206.jpg" style="height:100%">
-					  </div>
-					  
-					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					  <a class="next" onclick="plusSlides(1)">&#10095;</a>	  
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
 				  </div>
-
-				<div class="content-col" style="margin-top: 20px; text-align: center;">
-					<a href="index.html#contact" class="hero-btn green-btn">Contacteer ons!</a>
+			</div>
+			<div class="row pt-4">
+				<div class="col">
+					<a href="index.html#contact" class="btn btn-primary">Contacteer ons!</a>
 				</div>
+			</div>
+			</div>
 		</section>
-
-		<section class="footer">
-			<nav>
-				<a href="index.html"><img src="img/logo.svg" alt="logo"/></a>
-				<div class="copyright">Copyright 2021. All rights reserved.</div>
-					<div class="nav-links" id="navLinks">
-						<ul>
-							<li><a class="nav-link" href="index.html">Home</a></li>
-							<li><a class="nav-link" href="about.html">Over ons</a></li>
-							<li><a class="nav-link" href="realisaties.html">Ons werk</a></li>
-							<li><a class="nav-link" href="index.html#contact">Contact</a></li>
-						</ul>
+		
+		<footer>
+			<div class="container">
+				<div class="row pt-4">
+					<div class="col">
+						Copyright 2021. All rights reserved.
 					</div>
-			</nav>
-		</section>
+					<div class="col text-end">
+						<a class="link" aria-current="page" href="index.html">Home</a>
+						<a class="link" href="about.html">Over ons</a>
+						<a class="link active" href="realisaties.html">Ons werk</a>
+						<a class="link" href="#contact">Contact</a>
+				</div>
+			</div>
+		</footer>
 
-<script>
-	var navLinks = document.getElementById("navLinks");
-	function showMenu(){
-		navLinks.style.right = "0";
-	}
-	function hideMenu(){
-		navLinks.style.right = "-200px";
-	}
-
-	function openModal() {
-		  document.getElementById("myModal").style.display = "block";
-		}
-		
-		function closeModal() {
-		  document.getElementById("myModal").style.display = "none";
-		}
-		
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-		
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-		
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  var captionText = document.getElementById("caption");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			  dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		  captionText.innerHTML = dots[slideIndex-1].alt;
-		}
-
-		/**/
-		// function getRandomSize(min, max) {
-  		// 	return Math.round(Math.random() * (max - min) + min);
-		// }
-
-		// var allImages = "";
-
-		// for (var i = 0; i < 25; i++) {
-  		// var width = getRandomSize(200, 400);
-  		// var height = getRandomSize(200, 400);
-  		// allImages += '<img src="https://placekitten.com/' + width + '/' + height + '" alt="pretty kitty">';
-		// }
-
-		// photos.innerHTML = allImages
-</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 	</body>
 </html>
