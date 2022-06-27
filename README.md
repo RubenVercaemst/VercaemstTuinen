@@ -12,13 +12,6 @@
 
 A small website for my father's landscaping business.
 
-Soon to come changes:
-* Responsiveness for high resolution mobile phones.
-* A new javascript lightbox gallery.
-* Some UI changes.
-
 ### Built With
 
-* HTML
-* CSS
-* JavaScript
+* Bootstrap 5
