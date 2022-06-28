@@ -1,5 +1,5 @@
 body {
-	background-color: pink;
+	background-color: white;
 }
 
 /** {
@@ -7,9 +7,11 @@ body {
 }*/
 
 :root {
-	--main-color: #668C4A;
-	--main-font-color: #1A2530;
-	--main-detail-color: #A6BF4B;
+	--tv-green: #29B475;
+	--tv-light-green: #EAF8F2;
+	--tv-dark: #16252D;
+	--tv-light-dark: #343A40;
+	--tv-btn-hover-green: #259f68;
 }
 
 header{
@@ -48,39 +50,124 @@ html {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-	background-color: pink;
 }
 
-#who{
-	background-color: lemonchiffon;
+.big {
+    font-size: calc(3rem + 1.5vw);
+}
+
+/*#who{
+	background-color: var(--tv-light-green);
 }
 
 #what{
-	background-color: aqua;
+	background-color: white
 }
 
 #contact{
-	background-color: bisque;
+	background-color: var(--tv-light-green);
 }
 
 footer{
-	background-color: azure;
+	background-color: var(--tv-light-dark);
 }
 
 #about{
-	background-color: lemonchiffon;
-}
-
-#what{
-	background-color: aqua;
-}
+	background-color: var(--tv-light-green);
+}*/
 
 .carousel-item img {
-	object-fit: cover;
+  object-fit: cover;
   object-position: center;
   height: 70vh;
   overflow: hidden;
 }
+
+.bg-dark {
+	background-color: var(--tv-dark)!important;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link:hover {
+    color: var(--tv-light-green);
+}
+
+.active{
+    color: var(--tv-green)!important;
+}
+
+.offcanvas-title{
+	color: white;
+}
+
+.card{
+	border: none;
+	background-color: var(--tv-light-dark);
+}
+
+.card-header {
+	border: none;
+	background-color: var(--tv-light-dark);
+}
+
+#contact{
+	background-color: var(--tv-light-dark);
+	color: white;
+}
+
+footer{
+	background-color: var(--tv-dark);
+	color: white;
+}
+
+footer .nav-link{
+	padding: 0.5rem;
+}
+
+.btn-primary{
+	background-color: var(--tv-green);
+	border-color: var(--tv-green);
+}
+
+.btn-primary:hover {
+	background-color: var(--tv-btn-hover-green);
+	border-color: var(--tv-btn-hover-green);
+}
+
+.arrow-down .fas{
+	width: 80%;
+	color: #fff;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+  }
+
+/*.nav-link .a:hover{
+	color: var(--tv-light-green);
+}
+
+.nav-link :hover{
+	color: var(--tv-light-green)!important;
+}*/
+
+/*.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}*/
 
 /*.arrow-down .fas{
 	width: 90%;
