@@ -1,9 +1,10 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Inter', sans-serif;
-	font-weight: 300;
+body {
+	background-color: pink;
 }
+
+/** {
+	font-family: 'Inter', sans-serif;
+}*/
 
 :root {
 	--main-color: #668C4A;
@@ -11,7 +12,7 @@
 	--main-detail-color: #A6BF4B;
 }
 
-.header{
+header{
 	min-height: 100vh;
 	width: 100%;
 	background-image: url(img/mainbanner.jpg);
@@ -20,10 +21,84 @@
 	position: relative;
 }
 
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: url(img/subbannertuin.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+}
+
+/*.sub-header h1{
+	color: white;
+	padding-top: 30vh;
+}*/
+
 html {
 	scroll-behavior: smooth;
+}
+
+.text-box{
+	width: 80%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	background-color: pink;
+}
+
+#who{
+	background-color: lemonchiffon;
+}
+
+#what{
+	background-color: aqua;
+}
+
+#contact{
+	background-color: bisque;
+}
+
+footer{
+	background-color: azure;
+}
+
+#about{
+	background-color: lemonchiffon;
+}
+
+#what{
+	background-color: aqua;
+}
+
+.carousel-item img {
+	object-fit: cover;
+  object-position: center;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/*.arrow-down .fas{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	background-color: pink;
   }
 
+/* * {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+}
 
   #navbar {
 	position: fixed;
@@ -102,7 +177,7 @@ nav img{
 	color: #fff;
 	border: 1px solid #fff;
 	padding: 12px 34px;
-	/* font-size: 13px; */
+	font-size: 13px;
 	background: transparent;
 	position: relative;
 	cursor: pointer;
@@ -116,7 +191,7 @@ nav img{
 }
 
 .white-btn:hover{
-	/* border: 1px solid #121921; */
+	/border: 1px solid #121921; 
 		border: 1px solid white;
 
 	background: white;
@@ -142,7 +217,7 @@ nav .fas{
 		top: 0;
 		right: -200px;
 		text-align: center;
-		/* z-index: 2; */
+		/* z-index: 2; 
 		transition: 1s;
 	}
 	nav .fas{
@@ -158,7 +233,7 @@ nav .fas{
 	}
 }
 
-/*----- content -----*/
+/----- content -----/
 
 .row{
 	margin-top: 5%;
@@ -221,7 +296,7 @@ h1{
 }
 
 @media all and (max-width: 900px){
-/* @media all and (max-width: 56.25em){ */
+/* @media all and (max-width: 56.25em){ 
 	.row{
 		flex-direction: column;
 	}
@@ -230,7 +305,7 @@ h1{
 	}
 }
 
-/*----- contact -----*/
+/*----- contact -----
 .contact{
 	width: 100%;
 	background-color: var(--main-font-color);
@@ -286,7 +361,7 @@ h1{
 	column-count: 2;
 }
 
-/*----- footer -----*/
+/*----- footer -----
 
 .footer{
 	background-color: #121921;
@@ -295,7 +370,7 @@ h1{
 .footer .nav-links ul li a{
 	color: white;
 	text-decoration: none;
-	/* font-size: 13px; */
+	/* font-size: 13px; 
 }
 
 .footer .nav-links ul li::after{
@@ -308,7 +383,7 @@ h1{
 	margin-left: 20px;
 }
 
-/*----- sub-header -----*/
+/*----- sub-header -----
 
 .sub-header{
 	height: 50vh;
@@ -325,193 +400,7 @@ h1{
 	padding-top: 30vh;
 }
 
-
-  /* .photos { */
-	.photos {
-		/* Prevent vertical gaps */
-		line-height: 0;
-		
-		-webkit-column-count: 4;
-		-webkit-column-gap:   8px;
-		-moz-column-count:    4;
-		-moz-column-gap:      8px;
-		column-count:         4;
-		column-gap:           8px;
-	 }
-	 
-	 .photos img {
-	   /* Just in case there are inline attributes */
-	   width: 100% !important;
-	   height: auto !important;
-	   margin-top: 8px;
-	 }
-	 
-	 @media all and (max-width: 1200px) {
-	   .photos {
-	   -moz-column-count:    3;
-	   -webkit-column-count: 3;
-	   column-count:         3;
-	   }
-	 }
-	 @media all and (max-width: 900px) {
-	   .photos {
-	   -moz-column-count:    2;
-	   -webkit-column-count: 2;
-	   column-count:         2;
-	   }
-	 }
-	 @media all and (max-width: 600px) {
-	   .photos {
-	   -moz-column-count:    1;
-	   -webkit-column-count: 1;
-	   column-count:         1;
-	   }
-	 }
-	 
-
-  /*----- lightbox -----*/
-	
-	.lightbox-target:target {
-	opacity: 1;
-	top: 0;
-	bottom: 0;
-	}
-	
-	.lightbox-target:target img {
-	max-height: 100%;
-	max-width: 100%;
-	}
-	
-	.lightbox-target:target a.lightbox-close {
-	top: 0px;
-	}
-
-  .row-photos:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-  }
-  
-  /* Modal Content */
-  .modal-content{
-    position: relative;
-    margin: auto;
-	max-height: 80vh;
-	max-width: 80vh;
-  }
-
-  .modal-content :not(.prev,.next){
-	text-align: center;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .mySlides {
-    display: none;
-  }
-
-  .mySlides img{
-    display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  } 
-  
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-	top: 25vh;
-    width: auto;
-    padding: 16px;
-    margin-top: -60px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  
-  img.hover-shadow {
-    transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  /* arrow down */
+  /* arrow down 
 
   .arrow-down .fas{
 	width: 90%;
@@ -521,4 +410,4 @@ h1{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-  }
+  }*/
