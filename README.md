@@ -4,7 +4,7 @@
   <p align="center">
     This project is still being worked on.
     <br />
-    <a href="http://www.vercaemsttuinen.be/"><strong>» View the live website</strong></a>
+    <a href="http://www.vercaemsttuinen.be/"><strong>» View the live website »</strong></a>
   </p>
 </p>
 
