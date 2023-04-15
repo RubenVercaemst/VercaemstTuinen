@@ -2,7 +2,7 @@
   <h3 align="center">Website: Vercaemst Tuinen</h3>
 
   <p align="center">
-    <a href="http://www.vercaemsttuinen.be/"><strong>» View the live website »</strong></a>
+    <a href="https://vercaemsttuinen.web.app/"><strong>» View the live website »</strong></a>
   </p>
 </p>
 
